@@ -1,0 +1,6 @@
+framework module Pods_LoadingView_Tests {
+  umbrella header "Pods-LoadingView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
