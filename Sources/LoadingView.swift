@@ -49,7 +49,7 @@ public class LoadingView: UIView{
     @IBInspectable
     var borderColor : UIColor{
         get{
-            return UIColor(cgColor: self.layer.borderColor ?? CGColor(gray: 0, alpha: 0))
+            return UIColor(cgColor: self.layer.borderColor ?? UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0).cgColor)
         }
         set{
             self.layer.borderColor = newValue.cgColor
@@ -58,7 +58,7 @@ public class LoadingView: UIView{
     @IBInspectable
     var shadowColor : UIColor{
         get{
-            return UIColor(cgColor: self.layer.shadowColor ?? CGColor(gray: 0, alpha: 0))
+            return UIColor(cgColor: self.layer.shadowColor ?? UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0).cgColor)
         }
         set{
             self.layer.shadowColor = newValue.cgColor
