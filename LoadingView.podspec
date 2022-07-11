@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LoadingView'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Loading animation for UIView along with easy customization.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'Sources/**/*.swift'
-  s.swift_versions = '5.0'
+  s.swift_versions = '4.0'
   s.platforms = {
       "ios": "10.0"
   }
