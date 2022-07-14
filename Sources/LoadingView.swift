@@ -353,3 +353,47 @@ public class LoadingView: UIView{
         }
     }
 }
+
+extension UIViewController{
+    
+    public func startLoadingLeft(color: UIColor) {
+        if #available(iOS 13.0, *) {
+            let indicator = UIActivityIndicatorView(activityIndicatorStyle: .medium)
+            indicator.color = color
+            indicator.startAnimating()
+            let barButton = UIBarButtonItem(customView: indicator)
+            self.navigationItem.setLeftBarButton(barButton, animated: true)
+        } else {
+            let indicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+            indicator.color = color
+            indicator.startAnimating()
+            let barButton = UIBarButtonItem(customView: indicator)
+            self.navigationItem.setLeftBarButton(barButton, animated: true)
+        }
+    }
+    
+    public func startLoadingRight(color: UIColor) {
+        if #available(iOS 13.0, *) {
+            let indicator = UIActivityIndicatorView(activityIndicatorStyle: .medium)
+            indicator.color = color
+            indicator.startAnimating()
+            let barButton = UIBarButtonItem(customView: indicator)
+            self.navigationItem.setRightBarButton(barButton, animated: true)
+        } else {
+            let indicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+            indicator.color = color
+            indicator.startAnimating()
+            let barButton = UIBarButtonItem(customView: indicator)
+            self.navigationItem.setRightBarButton(barButton, animated: true)
+        }
+    }
+    
+    public func stopLoadingRight(){
+        self.navigationItem.setRightBarButton(UIBarButtonItem(), animated: true)
+    }
+    
+    public func stopLoadingLeft(){
+        self.navigationItem.setLeftBarButton(UIBarButtonItem(), animated: true)
+    }
+    
+}

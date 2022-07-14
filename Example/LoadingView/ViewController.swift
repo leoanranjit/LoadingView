@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     // MARK: - ViewController Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = false
+        self.title = "Loading View"
     }
     override func viewWillAppear(_ animated: Bool) {
     }
@@ -30,7 +32,17 @@ class ViewController: UIViewController {
     }
     @IBAction func btnStopLoading(_ sender: Any) {
         loaderView.stopLoading()
+        self.stopLoadingLeft()
+        self.stopLoadingRight()
     }
+    @IBAction func btnLeftLoader(_ sender: Any) {
+        self.startLoadingLeft(color: .systemBlue)
+    }
+    
+    @IBAction func btnRightLoader(_ sender: Any) {
+        self.startLoadingRight(color: .systemOrange)
+    }
+    
     
     // MARK: - Additional Functions
 
