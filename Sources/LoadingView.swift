@@ -9,8 +9,10 @@ import Foundation
 import UIKit
 
 enum Color {
-    case black,white
+    case black
+    case white
 }
+
 enum Direction : String {
     case inward = "inward"
     case outward = "outward"
@@ -37,6 +39,7 @@ public class LoadingView: UIView{
             self.layer.cornerRadius = newValue
         }
     }
+    
     @IBInspectable
     var borderWidth : CGFloat{
         get{
@@ -46,6 +49,7 @@ public class LoadingView: UIView{
             self.layer.borderWidth = newValue
         }
     }
+    
     @IBInspectable
     var borderColor : UIColor{
         get{
@@ -55,6 +59,7 @@ public class LoadingView: UIView{
             self.layer.borderColor = newValue.cgColor
         }
     }
+    
     @IBInspectable
     var shadowColor : UIColor{
         get{
@@ -64,6 +69,7 @@ public class LoadingView: UIView{
             self.layer.shadowColor = newValue.cgColor
         }
     }
+    
     @IBInspectable
     var shadowOpacity : Float{
         get{
@@ -73,6 +79,7 @@ public class LoadingView: UIView{
             self.layer.shadowOpacity = newValue
         }
     }
+    
     @IBInspectable
     var shadowRadius : CGFloat{
         get{
@@ -82,6 +89,7 @@ public class LoadingView: UIView{
             self.layer.shadowRadius = newValue
         }
     }
+    
     @IBInspectable
     var shadowOffset : CGSize{
         get{
@@ -148,8 +156,6 @@ public class LoadingView: UIView{
         }
     }
     
-    
-    
     var btnTitle = ""
     var btnImage = UIImage()
     var isLoading = false
@@ -160,11 +166,6 @@ public class LoadingView: UIView{
     let view2 = UIView()
     let view3 = UIView()
     let stackView = UIStackView()
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-    }
     
     // MARK: - ViewController Functions
     public override func layoutSubviews() {
