@@ -34,35 +34,76 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lNQ-wu-AuG">
-                                <rect key="frame" x="127.5" y="299" width="120" height="69"/>
+                                <rect key="frame" x="36" y="299" width="303" height="69"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ket-6S-FHe">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="32"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="eDy-we-g41"/>
-                                            <constraint firstAttribute="width" constant="120" id="zBY-Tu-BsP"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="View Loader">
-                                            <color key="titleColor" systemColor="linkColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="btnStartLoading:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eUs-qW-su0"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TrP-gC-HeA">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ket-6S-FHe">
+                                                <rect key="frame" x="0.0" y="0.0" width="95.5" height="32"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="eDy-we-g41"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Shimmer">
+                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnStartShimmer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MFk-N8-5ls"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dy5-jI-Caj">
+                                                <rect key="frame" x="103.5" y="0.0" width="96" height="32"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="WL0-Ir-PSc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Dots">
+                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnStartLoading:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Bk-lW-AS8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAC-rP-sC3">
+                                                <rect key="frame" x="207.5" y="0.0" width="95.5" height="32"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="DOk-Z7-1wm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Indicator">
+                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnStartIndicator:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PhQ-mw-swU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1S-Ei-EDH">
-                                        <rect key="frame" x="0.0" y="40" width="120" height="29"/>
+                                        <rect key="frame" x="0.0" y="40" width="303" height="29"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="TFV-ff-QkG"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Stop Loading">
@@ -122,9 +163,11 @@
                             <constraint firstItem="WLF-qh-Qjt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="BZs-lR-ESX"/>
                             <constraint firstItem="lNQ-wu-AuG" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Cz4-0R-3Ky"/>
                             <constraint firstItem="HvQ-yG-2YC" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="FnO-Hn-mPa"/>
+                            <constraint firstItem="lNQ-wu-AuG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="Ftu-lj-YE1"/>
                             <constraint firstItem="4OM-vq-TSX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="IKM-FB-St7"/>
                             <constraint firstItem="HvQ-yG-2YC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="W60-gQ-Bvm"/>
                             <constraint firstItem="WLF-qh-Qjt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="bC8-mD-fzI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lNQ-wu-AuG" secondAttribute="trailing" constant="20" id="e1f-h5-i1A"/>
                             <constraint firstItem="lNQ-wu-AuG" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="l0h-nW-ox9"/>
                             <constraint firstItem="4OM-vq-TSX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="lin-ha-Lsp"/>
                         </constraints>
