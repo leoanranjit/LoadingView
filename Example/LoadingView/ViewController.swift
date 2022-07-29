@@ -22,13 +22,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = false
         self.title = "Loading View"
+        
+        loaderView.startShimmering()
     }
     override func viewWillAppear(_ animated: Bool) {
     }
     
     // MARK: - IBAction Functions
     @IBAction func btnStartLoading(_ sender: Any) {
-        loaderView.startLoading()
+        loaderView.startLoading(type: .indicator)
     }
     @IBAction func btnStopLoading(_ sender: Any) {
         loaderView.stopLoading()
