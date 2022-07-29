@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     // MARK: - IBAction Functions
     @IBAction func btnStartLoading(_ sender: Any) {
         loaderView.startLoading(type: .indicator)
+        loaderView.startLoading(type: .dots)
     }
     @IBAction func btnStopLoading(_ sender: Any) {
         loaderView.stopLoading()
