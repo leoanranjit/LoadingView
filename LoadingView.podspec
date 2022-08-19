@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LoadingView'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'Loading animation for UIView and Navigation Bar along with easy customization.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-'Loading view is a interactive loading indicator that can be used with any UIView. It also contains easy customization of the loading indicator along with customization to its border, shadow and corner radius. Now compatible with iOS 10.0 and above! Added Navigation Bar Loading Indicators. Added Shimmer and indicator option in Loading.'
+'Loading view is a interactive loading indicator that can be used with any UIView. It also contains easy customization of the loading indicator along with customization to its border, shadow and corner radius. Now compatible with iOS 10.0 and above! Added Navigation Bar Loading Indicators. Added Shimmer and indicator option in Loading. Added LoadingDots to UITableView!'
                        DESC
 
   s.homepage         = 'https://github.com/leoanranjit/LoadingView'
