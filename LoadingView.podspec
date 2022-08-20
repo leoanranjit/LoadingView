@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LoadingView'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'Loading animation for UIView, Navigation Bar and UITableView along with easy customization.'
 
 # This description is used to generate tags and improve search results.
