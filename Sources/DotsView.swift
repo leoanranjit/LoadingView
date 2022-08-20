@@ -89,6 +89,11 @@ public class DotsView: UIView {
         setDesign()
     }
     
+    public override func willMove(toWindow newWindow: UIWindow?) {
+        super.willMove(toWindow: newWindow)
+        startAnimation()
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

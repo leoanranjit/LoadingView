@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     // MARK: - IBAction Functions
     @IBAction func btnStartLoading(_ sender: Any) {
-        loaderView.startSpinning()
+        loaderView.startLoading(type: .dots)
     }
     @IBAction func btnStartShimmer(_ sender: Any) {
         loaderView.startShimmering()
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         loaderView.startLoading(type: .indicator)
     }
     @IBAction func btnStopLoading(_ sender: Any) {
-        loaderView.stopSpinning()
+        loaderView.stopLoading()
         loaderView.stopShimmering()
         self.stopLoadingLeft()
         self.stopLoadingRight()
