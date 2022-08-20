@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A6F7A9B7CAFC390B468244AE0EACCCE /* Pods-LoadingView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8212AB3B24B1FDA92749F35F67FDE7E /* Pods-LoadingView_Example-dummy.m */; };
 		6DF3CFED28AFE67C00593E43 /* DotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3CFEC28AFE67C00593E43 /* DotsView.swift */; };
+		6DF3CFF128B0A91C00593E43 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3CFF028B0A91C00593E43 /* SpinnerView.swift */; };
 		6DFFD8A62857501400D51112 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFFD8A52857501400D51112 /* LoadingView.swift */; };
 		8A5828BD910E82D0FF5345E41909AF01 /* Pods-LoadingView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF82803F976681F828032E7E20EA80 /* Pods-LoadingView_Tests-dummy.m */; };
 		935008DD60BDAB73AC8F44997B917635 /* LoadingView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B069652F45E6436CDA3CBAB3D3473CB9 /* LoadingView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +53,7 @@
 		5BEBB26BF0B762FA92CAC7D50CC15249 /* Pods-LoadingView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoadingView_Tests-Info.plist"; sourceTree = "<group>"; };
 		68AF82803F976681F828032E7E20EA80 /* Pods-LoadingView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoadingView_Tests-dummy.m"; sourceTree = "<group>"; };
 		6DF3CFEC28AFE67C00593E43 /* DotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsView.swift; sourceTree = "<group>"; };
+		6DF3CFF028B0A91C00593E43 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		6DFFD8A52857501400D51112 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		702AC62B9C31FB5D81F3ADBB81FEEF89 /* Pods-LoadingView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoadingView_Example-Info.plist"; sourceTree = "<group>"; };
 		728659E10AF4AF0F68A403E2A7B6C357 /* Pods-LoadingView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoadingView_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				6DFFD8A52857501400D51112 /* LoadingView.swift */,
 				6DF3CFEC28AFE67C00593E43 /* DotsView.swift */,
+				6DF3CFF028B0A91C00593E43 /* SpinnerView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			files = (
 				935582CA66A7E6F722A422CAE3B89E1B /* LoadingView-dummy.m in Sources */,
 				6DF3CFED28AFE67C00593E43 /* DotsView.swift in Sources */,
+				6DF3CFF128B0A91C00593E43 /* SpinnerView.swift in Sources */,
 				6DFFD8A62857501400D51112 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

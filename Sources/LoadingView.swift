@@ -395,6 +395,27 @@ extension UIView {
         layer.mask = nil
     }
     
+    public func startSpinning(){
+        
+        let spinners = self.subviews.filter{$0 is SpinnerView}
+        if spinners.count < 1{
+            let view = SpinnerView()
+            self.addSubview(view)
+            view.frame = self.bounds
+            view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        }
+
+    }
+    
+    public func stopSpinning(){
+        
+        let spinners = self.subviews.filter{$0 is SpinnerView}
+        if spinners.count > 0{
+            spinners[0].removeFromSuperview()
+        }
+        
+    }
+    
 }
 
 extension UITableView{
