@@ -10,28 +10,28 @@ import UIKit
 class SpinnerView: UIView {
 
     let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-    
+
     // MARK: - Initializer Functions
     override init(frame: CGRect) {
         super.init(frame: CGRect.zero)
         setDesign()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    func setDesign(){
-        
+
+    func setDesign() {
+
         spinner.backgroundColor = .clear
         spinner.startAnimating()
-        
+
         setLayout()
-        
+
     }
-    
-    func setLayout(){
-        
+
+    func setLayout() {
+
         self.addSubview(spinner)
         spinner.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -39,8 +39,8 @@ class SpinnerView: UIView {
             spinner.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             spinner.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             spinner.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-        ])
-  
+            ])
+
     }
 
 }
