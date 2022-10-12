@@ -353,11 +353,33 @@ extension UIView {
 
     }
 
+    public func startLoading(color: UIColor) {
+
+        let dots = self.subviews.filter { $0 is DotsView }
+        if dots.count < 1 {
+            let view = DotsView()
+            view.translatesAutoresizingMaskIntoConstraints = false
+            view.dotOneColor = color
+            view.dotTwoColor = color
+            view.dotThreeColor = color
+            self.addSubview(view)
+            NSLayoutConstraint.activate([
+                view.centerXAnchor.constraint(equalTo: centerXAnchor),
+                view.centerYAnchor.constraint(equalTo: centerYAnchor)
+            ])
+        }
+
+    }
+
     public func stopSpinning() {
 
         let spinners = self.subviews.filter { $0 is SpinnerView }
+        let dots = self.subviews.filter { $0 is DotsView }
         if spinners.count > 0 {
             spinners[0].removeFromSuperview()
+        }
+        if dots.count > 0 {
+            dots[0].removeFromSuperview()
         }
 
     }

@@ -10,9 +10,9 @@ import UIKit
 public class DotsView: UIView {
 
     //MARK: - Variables
-    open var dotSize: CGFloat = UIScreen.main.bounds.height * 0.01
+    open var dotSize: CGFloat = UIScreen.main.bounds.height * 0.009
     @IBInspectable
-    var _dotSize: CGFloat = UIScreen.main.bounds.height * 0.01 {
+    var _dotSize: CGFloat = UIScreen.main.bounds.height * 0.009 {
         didSet {
             dotSize = _dotSize
         }
@@ -42,9 +42,9 @@ public class DotsView: UIView {
         }
     }
 
-    open var spacing: CGFloat = UIScreen.main.bounds.width * 0.01
+    open var spacing: CGFloat = UIScreen.main.bounds.width * 0.009
     @IBInspectable
-    var _spacing: CGFloat = UIScreen.main.bounds.height * 0.01 {
+    var _spacing: CGFloat = UIScreen.main.bounds.height * 0.009 {
         didSet {
             spacing = _spacing
         }
